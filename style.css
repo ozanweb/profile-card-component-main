@@ -1,0 +1,142 @@
+/*GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+
+/*STARTS FROM HERE*/
+
+:root {
+  font-size: 18px;
+}
+
+body {
+  color: hsl(229, 23%, 23%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: .9rem;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(/images/bg-pattern-top.svg);
+  background-size: 200vw;
+  background-position: -130vw -130vw;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.bg-img {
+  position: absolute;
+  width: 200vw;
+  z-index: 1;
+}
+
+.top-bg {
+  top: -60%;
+  left: -150%;
+}
+
+.bottom-bg {
+  bottom: -60%;
+  right: -150%;
+}
+
+.main {
+  background-image: url(/images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 17rem;
+  width: 100%;
+  margin: 0 .5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+  margin-top: 25%;
+  padding-bottom: 1.5rem;
+}
+
+.avatar {
+  margin: 0 auto;
+  width: 30%;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-sizing: content-box;
+}
+
+.header h1 {
+  padding-top: 1rem;
+}
+
+.header p {
+  padding: .5rem 0;
+}
+
+h1 > span {
+
+  font-weight: 400;
+}
+
+.footer {
+
+  width: 100%;
+  border-top: 1px solid hsl(227, 10%, 46%);
+  background-color: white;
+
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem 0;
+  justify-content: space-evenly;
+  text-align: center;
+
+}
+
+li p {
+  font-size: .8rem;
+}
+
+li span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width:400px) {
+  .bg-img {
+    width: 220vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .bg-img {
+    width: 50vw;
+    
+  }
+
+  .top-bg {
+    top: -25%;
+    left: 0%;
+  }
+  
+  .bottom-bg {
+    bottom: -25%;
+    right: 0%;
+  }
+}
