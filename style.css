@@ -15,7 +15,7 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: .9rem;
   background-color: hsl(185, 75%, 39%);
-  background-image: url(/images/bg-pattern-top.svg);
+  background-image: url(images/bg-pattern-top.svg);
   background-size: 200vw;
   background-position: -130vw -130vw;
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@ h1 {
 }
 
 .main {
-  background-image: url(/images/bg-pattern-card.svg);
+  background-image: url(images/bg-pattern-card.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: white;
