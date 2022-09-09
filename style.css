@@ -15,10 +15,10 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: .9rem;
   background-color: hsl(185, 75%, 39%);
-  background-image: url(images/bg-pattern-top.svg);
-  background-size: 200vw;
-  background-position: -130vw -130vw;
-  background-repeat: no-repeat;
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-size: 100vh, 100vh;
+  background-position: 150% -60vh, -50% 60vh;
+  background-repeat: no-repeat, no-repeat;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -119,24 +119,19 @@ li span {
 }
 
 @media screen and (min-width:400px) {
-  .bg-img {
-    width: 220vw;
+  body {
+    background-position: 100% -60vh, 0% 60vh;
   }
 }
 
-@media screen and (min-width: 600px) {
-  .bg-img {
-    width: 50vw;
-    
+@media screen and (min-width: 800px) {
+  body {
+    background-position:-220% -50vh, 320% 50vh;
   }
+}
 
-  .top-bg {
-    top: -25%;
-    left: 0%;
-  }
-  
-  .bottom-bg {
-    bottom: -25%;
-    right: 0%;
+@media screen and (min-width: 1025px) {
+  body {
+    background-position:-30% -50vh, 130% 50vh;
   }
 }
